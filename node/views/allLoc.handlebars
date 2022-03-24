@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">API Topzera desnecessária</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link disabled">Squanchy</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<ul class="people_list">
+  <div class="grid-container">
+    {{#each data.results}}
+      <div class="grid-item">
+        <div class="circle">
+          <h2>{{name}}</h2>
+        </div>
+        <div class="content">
+          <p>this location is a {{type}}, in a {{dimension}} it was created in {{created}}</p>
+          <a href="/loc/{{id}}">Read More</a>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</ul>
+<footer>
+  <div class="navigation">
+      <a href="/loc1">1</a>
+      <a  href="/loc2">2</a>
+      <a  href="/loc3">3</a>
+      <a  href="/loc4">4</a>
+      <a  href="/loc5">5</a>
+      <a  href="/loc6">6</a>
+      <a  href="/loc7">7</a>
+    </div>
+</footer>
