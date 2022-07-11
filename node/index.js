@@ -27,6 +27,6 @@ app.use(express.static('public'));
 routes(app);
 
 // Start listening for incoming requests
-app.listen(5000, () => {
+app.listen(80, () => {
   console.log('API listening on port 5000');
 });
